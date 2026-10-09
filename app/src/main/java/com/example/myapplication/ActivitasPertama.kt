@@ -125,3 +125,19 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
             bgColorRes = R.color.bg_card_2,
             logoRes = R.drawable.logo_umy
         )
+
+        MahasiswaCard(
+            namaRes = R.string.nama_3,
+            nimRes = R.string.nim_3,
+            alamatRes = R.string.alamat_3,
+            bgColorRes = R.color.bg_card_3,
+            logoRes = R.drawable.logo_umy
+        )
+
+        MahasiswaCard(
+            namaRes = R.string.nama_4,
+            nimRes = R.string.nim_4,
+            alamatRes = R.string.alamat_4,
+            bgColorRes = R.color.bg_card_4,
+            logoRes = R.drawable.logo_umy
+        )

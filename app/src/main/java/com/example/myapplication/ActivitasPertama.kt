@@ -93,4 +93,19 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
     Column(
         modifier = modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
-    )
+    ) {
+        Spacer(modifier = Modifier.height(40.dp))
+
+        Text(
+            text = stringResource(id = R.string.prodi),
+            fontSize = 24.sp,
+            fontWeight = FontWeight.Bold,
+            color = colorResource(id = R.color.text_black)
+        )
+        Text(
+            text = stringResource(id = R.string.univ),
+            fontSize = 14.sp,
+            color = colorResource(id = R.color.text_black),
+            modifier = Modifier.padding(bottom = 24.dp)
+        )
+}

@@ -76,3 +76,15 @@ fun MahasiswaCard(
                     color = colorResource(id = R.color.text_yellow)
                 )
             }
+
+            Spacer(modifier = Modifier.width(12.dp))
+
+            Image(
+                painter = painterResource(id = logoRes),
+                contentDescription = null,
+                modifier = Modifier.size(60.dp)
+            )
+        }
+    }
+}
+}

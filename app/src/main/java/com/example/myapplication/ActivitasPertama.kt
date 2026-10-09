@@ -87,4 +87,10 @@ fun MahasiswaCard(
         }
     }
 }
-}
+
+@Composable
+fun ActivitasPertama(modifier: Modifier = Modifier) {
+    Column(
+        modifier = modifier.fillMaxSize(),
+        horizontalAlignment = Alignment.CenterHorizontally
+    )

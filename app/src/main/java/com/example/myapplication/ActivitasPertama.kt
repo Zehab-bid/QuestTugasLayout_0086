@@ -51,5 +51,28 @@ fun MahasiswaCard(
                 modifier = Modifier.size(60.dp)
             )
 
-           )
-    }
+            Spacer(modifier = Modifier.width(12.dp))
+
+            Column(
+                modifier = Modifier.weight(1f)
+            ) {
+                Text(
+                    text = stringResource(id = namaRes),
+                    fontSize = 18.sp,
+                    color = colorResource(id = R.color.text_white),
+                    fontWeight = if (isCursive) FontWeight.Normal else FontWeight.Bold,
+                    fontFamily = if (isCursive) FontFamily.Cursive else FontFamily.Default
+                )
+                if (nimRes != null) {
+                    Text(
+                        text = stringResource(id = nimRes),
+                        fontSize = 14.sp,
+                        color = colorResource(id = R.color.text_cyan)
+                    )
+                }
+                Text(
+                    text = stringResource(id = alamatRes),
+                    fontSize = 14.sp,
+                    color = colorResource(id = R.color.text_yellow)
+                )
+            }

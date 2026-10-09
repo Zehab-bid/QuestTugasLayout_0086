@@ -108,4 +108,20 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
             color = colorResource(id = R.color.text_black),
             modifier = Modifier.padding(bottom = 24.dp)
         )
-}
+
+        MahasiswaCard(
+            namaRes = R.string.nama_1,
+            nimRes = null,
+            alamatRes = R.string.alamat_1,
+            bgColorRes = R.color.bg_card_1,
+            logoRes = R.drawable.logo_umy,
+            isCursive = true
+        )
+
+        MahasiswaCard(
+            namaRes = R.string.nama_2,
+            nimRes = R.string.nim_2,
+            alamatRes = R.string.alamat_2,
+            bgColorRes = R.color.bg_card_2,
+            logoRes = R.drawable.logo_umy
+        )

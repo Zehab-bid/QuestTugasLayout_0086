@@ -28,4 +28,28 @@ fun MahasiswaCard(
     @ColorRes bgColorRes: Int,
     @DrawableRes logoRes: Int,
     isCursive: Boolean = false
-)
+){
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 24.dp, vertical = 8.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = colorResource(id = bgColorRes)
+        ),
+        shape = RoundedCornerShape(16.dp)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(12.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            Image(
+                painter = painterResource(id = logoRes),
+                contentDescription = null,
+                modifier = Modifier.size(60.dp)
+            )
+
+           )
+    }
